@@ -1,16 +1,7 @@
 # stateful_app
 
-Assignment of module 9
+"Enhanced UI: Improved layout and styling for 'My Bag' screen, and customized font colors for clarity."
 
-## Getting Started
+## screenshot
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![screenshot of this application](images/ss1.png)
