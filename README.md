@@ -7,9 +7,7 @@ Welcome to the Flutter Mastery Code Repository! This repository contains all the
 - [About the Course](#about-the-course)
 - [About Flutter](#about-flutter)
 - [Getting Started](#getting-started)
-- [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## About the Course
 
@@ -29,10 +27,6 @@ To get started with the code samples in this repository, follow these steps:
 
 3. Explore the folders to find code examples organized by topics and lessons.
 
-## Contents
-
-This repository is organized into folders corresponding to different lessons and topics covered in the Flutter Mastery course. Each folder contains code examples, projects, and resources related to that topic.
-
 ## Contributing
 
 If you'd like to contribute to this repository, follow these steps:
@@ -43,6 +37,4 @@ If you'd like to contribute to this repository, follow these steps:
 4. Push your changes to your fork: `git push origin feature/your-feature-name`.
 5. Create a pull request detailing your changes.
 
-## License
 
-This repository is licensed under the [MIT License](LICENSE). You are free to use, modify, and distribute the code as long as you include the original license and attribution.
