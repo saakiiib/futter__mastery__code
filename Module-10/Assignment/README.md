@@ -5,6 +5,8 @@ Add and manage notes with edit/delete options and status indicators for edited n
 - Easily add and edit titles and descriptions.
 - Option to edit, delete, and view edited items with different icons.
 
-## Screen record
+## Screenshots
 
-![Screenrecord of the application](record/srecord1.mp4)
+![Screenshot of the application](images/ss1.png)
+![Screenshot of the application](images/ss2.png)
+![Screenshot of the application](images/ss3.png)
