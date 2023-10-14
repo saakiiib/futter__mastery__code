@@ -10,3 +10,4 @@ Add and manage notes with edit/delete options and status indicators for edited n
 ![Screenshot of the application](images/ss1.png)
 ![Screenshot of the application](images/ss2.png)
 ![Screenshot of the application](images/ss3.png)
+![Screenshot of the application](images/ss4.png)
