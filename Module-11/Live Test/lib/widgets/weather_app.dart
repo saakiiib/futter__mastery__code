@@ -44,7 +44,7 @@ class WeatherApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Weather Information"),
+        title: const Text("Weather Info App"),
       ),
       body: ListView.builder(
         itemCount: citiesWeather.length,
