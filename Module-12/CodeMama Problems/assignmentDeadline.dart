@@ -4,15 +4,18 @@ import 'dart:io';
 
 void main() {
 
-  List<int> input = stdin.readLineSync()!.split(' ').map(int.parse).toList();
-  int minutesLeft = input[0];
-  int timeAssignmentA = input[1];
-  int timeAssignmentB = input[2];
+  List<String> inputs = stdin.readLineSync()!.split(' ');
+  int N = int.parse(inputs[0]);
+  int A = int.parse(inputs[1]);
+  int B = int.parse(inputs[2]);
+  canCompleteAssignments(N, A, B);
+}
 
-
-  if (timeAssignmentA + timeAssignmentB <= minutesLeft) {
-    print("Yes");
+void canCompleteAssignments(int N, int A, int B) {
+  if (A + B <= N) {
+    print('Yes');
   } else {
-    print("No");
+    print('No');
   }
 }
+
