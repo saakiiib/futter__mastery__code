@@ -1,0 +1,49 @@
+import 'dart:convert';
+
+import 'package:flutter/material.dart';
+import 'package:getX_task_manager/ui/controllers/reset_password_controller.dart';
+import 'package:getX_task_manager/ui/screens/login_screen.dart';
+import 'package:getX_task_manager/ui/screens/reset_password_screen.dart';
+import 'package:getX_task_manager/ui/widgets/body_background.dart';
+import 'package:pin_code_fields/pin_code_fields.dart';
+
+import '../../data/network_caller/network_caller.dart';
+import '../../data/network_caller/network_response.dart';
+import '../../data/utility/urls.dart';
+import '../widgets/snack_message.dart';
+import 'package:get/get.dart';
+
+class PinVerificationController extends GetxController {
+  bool _otpVerifyInProgress = false;
+
+  bool get otpVerifyInProgress => _otpVerifyInProgress;
+  String _message = '';
+
+  String get message => _message;
+
+  Future<bool> otpVerify(String email, String otp) async {
+    bool isSuccess = false;
+    _otpVerifyInProgress = true;
+    update();
+
+    final NetworkResponse response =
+        await NetworkCaller().getRequest(Urls.recoveryOTPUrl(email, otp));
+    _otpVerifyInProgress = false;
+    update();
+
+    if (response != null) {
+      if (response.isSuccess && response.jsonResponse['status'] == 'success') {
+        isSuccess = true;
+        _message = 'OTP is Verified';
+      } else {
+        _message = 'Wrong OTP. Try again';
+        isSuccess = false;
+      }
+    } else {
+      _message = 'OTP verification failed. Try again!';
+      isSuccess = false;
+    }
+    update();
+    return isSuccess;
+  }
+}
