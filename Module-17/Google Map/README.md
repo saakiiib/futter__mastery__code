@@ -2,7 +2,7 @@
 
 This repository provides a step-by-step guide on integrating Google Maps into your Flutter application using the Google Maps Android API.
 
-![Application Screenshot](path/to/ss1.png)
+![Application Screenshot](images/ss1.png)
 
 ## Getting Started
 
